@@ -37,7 +37,7 @@ public class Matryoshka {
         
         //The third password first XORs the ith user's inputted character with the corresponding ith character
         //of the string "GO FLYERS!!!". It then compares this result to the ESI counter. Therefore, to obtain the character
-        //necessary, we XOR each character of "GO FLYERS!!!" with its corresponding pointer.
+        //necessary, we XOR each character of "GO FLYERS!!!" with its corresponding pointer value.
         //                  x XOR [i]"GO FLYERS!!!" = y
         //                  y XOR [i]"GO FLYERS!!!" = x
         char[] tmp3 = { 'G', 'O', ' ', 'F', 'L', 'Y', 'E', 'R', 'S', '!', '!', '!' };
@@ -50,8 +50,7 @@ public class Matryoshka {
         
         //The fourth password finds the serial number of the C:// volume on the computer it is run on. It then converts this
         //number from a hexadecimal value to a decimal value, and compares that to the user's input. Therefore, to obtain the
-        //password, a command is run to obtain the serial number, and it is converted accordingly.
-        
+        //password, a command is run on the command line to obtain the serial number, and it is converted to a 12-digit decimal valueaccordingly.
         String command = "cmd /c vol C:";
         Process p = Runtime.getRuntime().exec(command);
         BufferedReader In = new BufferedReader(new InputStreamReader(p.getInputStream()));
