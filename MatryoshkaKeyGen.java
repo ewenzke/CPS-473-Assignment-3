@@ -4,6 +4,9 @@ import java.util.*;
 //Author: Eric Wenzke
 public class Matryoshka {
 
+//The page https://www.mkyong.com/java/how-to-get-mac-address-in-java/ was helpful in getting a command run on the command line,
+//and read in the output from the command.
+
     //This program is a key generator for the Matryoshka.exe file. It does not take input, and returns the five passwords
     //for the Matryoshka program as it runs on your computer. It contains some sloppy code. It is intended to be run on a 
     //Windows machine.
